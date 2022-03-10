@@ -5,15 +5,24 @@ import StorePage from './components/StorePage/StorePage';
 import BasketPage from './components/BasketPage/BasketPage';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App_container">
-     <Header/>
-     <MainPage/>
-     <StorePage/>
-     <BasketPage/>
-     <Footer/>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+
+          <Route path='/main' element={<MainPage />} />
+          <Route path='/store' element={<StorePage />} />
+          <Route path='/basket' element={<BasketPage />} />
+
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+
+
     </div>
   );
 }
