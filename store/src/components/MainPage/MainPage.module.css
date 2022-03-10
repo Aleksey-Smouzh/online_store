@@ -1,0 +1,7 @@
+
+.container{
+    grid-area: m;
+   background: rgb(185, 184, 187);
+   border-bottom: 1px solid ;
+   height: 500px;
+}
