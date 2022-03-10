@@ -1,10 +1,19 @@
 [
  {"id" : 1,
     "title" : "Jacket",
-    "size" : 20,
+    "size" : "L",
     "color" :  "red",
-    "cost" :  44,
-    "img" :  " "
+    "cost" :  44
+    
+},
+
+{
+"id": 2,
+"title": "Jacket",
+"size": "M",
+"color" :  "black",
+"cost" :  49
 }
+
 
 ]

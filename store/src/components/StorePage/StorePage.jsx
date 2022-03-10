@@ -4,19 +4,45 @@ import storage from '../data/storage.json'
 
 
 function StorePage() {
+
+
+
   return (
     <div className={store.container}>StorePage
+    
+    <a href='/main'>Back</a>
+    
+    
     {storage.map(item=>
-    <section>
-        <ul>
-            <li> <h2>{item.title}</h2></li>
-            <li><h3>{item.color}</h3></li>
-            <li><h3>{item.size}</h3></li>
-            <li><h2>{item.cost}</h2></li>
-            <li>{item.img}</li>
-            <li>{item.id}</li>
-        </ul>
-    </section> )}
+
+   
+       <nav>
+           <ul>
+            <li key={item.id}><h2 className={store.title}>{item.title}</h2>
+            <div><h3 className={store.color}>{item.color}</h3></div>
+            <div><h3 className={store.size}>{item.size}</h3></div>
+            <div><h2 className={store.cost}>{item.cost}</h2></div>
+            </li>
+
+
+
+
+
+
+
+            </ul>
+
+
+
+
+
+
+
+
+
+            </nav>  
+        
+     )}
     
     
     
