@@ -1,3 +1,10 @@
 .container{
     grid-area: m;
 }
+.lists{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    width: 250px;
+}

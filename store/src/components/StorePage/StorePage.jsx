@@ -10,14 +10,15 @@ function StorePage() {
       <div>
         <NavLink to="/main">Back</NavLink>
       </div>
-      {storage.map((item) => (
+      {storage.map((item, id) => (
         <nav>
           <ul>
-            <li>
-              <h2 className={store.title}>{item.title}</h2>
+            <li key={id.toString()} className={store.lists}>
+              <NavLink to='/basket'><h2 className={store.title}>{item.title}</h2></NavLink>
               <h3 className={store.color}>{item.color}</h3>
               <h3 className={store.size}>{item.size}</h3>
               <h2 className={store.cost}>{item.cost}</h2>
+              
             </li>
           </ul>
         </nav>
